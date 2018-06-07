@@ -4,6 +4,8 @@ using namespace std;
 using ll = long long;
 const int res = 1e5 + 10;
 
+/// UPDATE TREE == ADD "VALUE" [ L, R ]. That's why += lazy[ node ].
+
 ll a[ res ], tree[ res * 4 ], lazy[ res * 4 ];
 
 void build_tree( int node, int b, int e )
